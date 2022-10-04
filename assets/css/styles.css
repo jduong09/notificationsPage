@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Plus Jakartha Sans";
+  src: url('../fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+
+body {
+  color: hsl(219, 14%, 63%);
+  font-family: "Plus Jakartha Sans";
+  font-weight: 400;
+}
+
+h2, h3 {
+  color: hsl(224, 21%, 14%);
+  font-weight: 700;
+}
+
+.div-notifications {
+  padding: 1rem;
+}
+
+.div-notifications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-notifications-header > h2 {
+  font-weight: 700;
+}
+
+.div-notifications-header > button {
+  cursor: pointer;
+  color: hsl(219, 12%, 42%);
+}
+
+#notifications-amount {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 85%, 26%);
+  padding: .1rem .5rem;
+  border-radius: 5px;
+}
+
+.item-notification {
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 87px
+}
+
+.item-notification.unread {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.item-notification.unread > .notification-content::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+  margin-left: .25rem;
+}
+
+.notification-user-pfp, .notification-img-comment > img {
+  width: 40px;
+  height: 40px;
+}
+
+.notification-user-pfp {
+  margin-right: .75rem;
+}
+
+.notification-content, .notification-time-sent {
+  font-size: .90rem;
+  width: calc(100% - 52px);
+}
+
+h3 {
+  display: inline;
+  margin-right: .25rem;
+}
+
+

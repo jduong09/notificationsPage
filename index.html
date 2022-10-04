@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <title>Frontend Mentor | Notifications page</title>
+</head>
+<body>
+
+  <main>
+    <div class="div-notifications">
+      <div class="div-notifications-header">
+        <h2>Notifications <span id="notifications-amount">3</span></h2>
+        <button>Mark all as read</button>
+      </div>
+      <ul class="list-notifications">
+        <li class="item-notification post-reply unread">
+          <img class="notification-user-pfp" src="./assets/images/avatar-mark-webber.webp" alt="mark webber pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Mark Webber</h3>
+            <span>reacted to your recent post</span>
+            <span class="notification-post">My first tournament today!</span>
+          </div>
+          <div class="notification-time-sent">1m ago</div>
+        </li>
+        <li class="item-notification follow unread">
+          <img class="notification-user-pfp" src="./assets/images/avatar-angela-gray.webp" alt="angela gray pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Angela Gray</h3>
+            <span>followed you</span>
+          </div>
+          <div class="notification-time-sent">5m ago</div>
+        </li>
+        <li class="item-notification group-member-join unread">
+          <img class="notification-user-pfp" src="./assets/images/avatar-jacob-thompson.webp" alt="jacob thompson pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Jacob Thompson</h3>
+            <span>has joined your group</span>
+            <span class="notification-group">Chess Club</span>
+          </div>
+          <div class="notification-time-sent">1 day ago</div>
+        </li>
+        <li class="item-notification private-msg">
+          <img class="notification-user-pfp" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanuddin pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Rizky Hasanuddin</h3>
+            <span>sent you a private message</span>
+            <span class="notification-private-msg">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </span>
+          </div>
+          <div class="notification-time-sent">5 days ago</div>
+        </li>
+        <li class="item-notification img-comment">
+          <img class="notification-user-pfp" src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly smith pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Kimberly Smith</h3>
+            <span>commented on your picture</span>
+            <span class="notification-img-comment">
+              <img src="./assets/images/image-chess.webp" src="user commented image"/>
+            </span>
+          </div>
+          <div class="notification-time-sent">1 week ago</div>
+        </li>
+        <li class="item-notification post-react">
+          <img class="notification-user-pfp" src="./assets/images/avatar-nathan-peterson.webp" alt="nathan peterson pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Nathan Peterson</h3>
+            <span>reacted to your recent post</span>
+            <span class="notification-post">5 end-game strategies to increase your win rate</span>
+          </div>
+          <div class="notification-time-sent">2 weeks ago</div>
+        </li>
+        <li class="item-notification group-member-leave">
+          <img class="notification-user-pfp" src="./assets/images/avatar-anna-kim.webp" alt="anna kim pfp"/>
+          <div class="notification-content">
+            <h3 class="notification-user">Anna Kim</h3>
+            <span>left the group</span>
+            <span class="notification-group">Chess Club</span>
+          </div>
+          <div class="notification-time-sent">2 weeks ago</div>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

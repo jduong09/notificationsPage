@@ -14,15 +14,15 @@
 }
 
 body {
-  color: hsl(219, 14%, 63%);
+  color: hsl(219, 12%, 42%);
   font-family: "Plus Jakartha Sans", "sans-serif";
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h2, h3 {
   color: hsl(224, 21%, 14%);
   font-family: "Plus Jakartha Sans Extra Bold", "sans-serif";
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .div-notifications {
@@ -35,16 +35,24 @@ h2, h3 {
   align-items: center;
 }
 
-.div-notifications-header > button {
-  cursor: pointer;
-  color: hsl(219, 12%, 42%);
-}
-
 #notifications-amount {
   color: hsl(0, 0%, 100%);
   background-color: hsl(219, 85%, 26%);
   padding: .1rem .5rem;
   border-radius: 5px;
+  margin-left: .25rem;
+}
+
+.div-notifications-header > button {
+  color: hsl(219, 12%, 42%);
+}
+
+.div-notifications-header > button, h3:hover, .notification-group:hover, .notification-post:hover, .notification-img-comment:hover {
+  cursor: pointer;
+}
+
+.div-notifications-header > button:hover, h3:hover, .notification-group:hover, .notification-post:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .item-notification {
@@ -100,7 +108,7 @@ h2, h3 {
 
 .notification-time-sent {
   grid-row: 2 / 3;
-  color: hsl(219, 14%, 63%);
+  color:hsl(219, 14%, 63%);
 }
 
 h3 {
@@ -108,36 +116,38 @@ h3 {
   margin-right: .25rem;
 }
 
-.notification-post, .notification-group, .notification-private-msg {
+.notification-post, .notification-group {
   font-family: "Plus Jakartha Sans Medium";
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .notification-post {
   color:hsl(219, 12%, 42%);
-  font-weight: 600;
   margin-left: .15rem;
 }
 
 .notification-group {
   color:hsl(219, 85%, 26%);
-  font-weight: 600;
   margin-left: .15rem;
 }
 
 .notification-private-msg {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  font-weight: 700;
   font-size: .9rem;
   padding: 1rem;
   margin-top: .5rem;
   border: 1px solid hsl(219, 14%, 63%);
+  border-radius: 5px;
+}
+
+.notification-private-msg:hover {
+  background-color: hsl(211, 68%, 94%);
+  border-color: hsl(211, 68%, 94%);
+  cursor: pointer;
 }
 
 .notification-img-comment {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
 }
-
-
